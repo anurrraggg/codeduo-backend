@@ -1,7 +1,7 @@
 import React from 'react';
-import Top from './TOP';
-import Center from './Center';
-import Bottom from './Bottom';
+import Top from './TOP/Top';
+import Center from './Center/Center';
+import Bottom from './Bottom/Bottom';
 
 function HomePage() {
   return (

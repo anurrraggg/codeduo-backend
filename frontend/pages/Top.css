@@ -1,0 +1,32 @@
+.topheader {
+  display: flex;
+  align-items: center;
+  padding: 16px 24px;
+  background-color: #e6f0ff;
+  border-bottom: 1px solid #c0d4ff; 
+  min-height: 60px;
+}
+
+.lang-btn {
+  background-color: #4a90e2; 
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(74, 144, 226, 0.5);
+  transition: background 0.2s;
+}
+
+.lang-btn:hover {
+  background-color: #357abd; 
+}
+
+.selected-lang {
+  font-size: 1rem;
+  color: #2a4d8f;
+  font-weight: 600;
+  padding: 5px 20px;
+}

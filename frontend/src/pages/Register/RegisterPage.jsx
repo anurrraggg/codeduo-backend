@@ -21,7 +21,7 @@ function RegisterPage() {
 		setLoading(true);
 		try {
 			await register(name, email, password);
-			navigate('/profile');
+			navigate('/');
 		} catch (err) {
 			setError(err?.message || 'Registration failed.');
 		} finally {
@@ -32,8 +32,8 @@ function RegisterPage() {
 	return (
 		<div>
 			<Top />
-			<div className="center_body" style={{ backgroundColor: 'black' }}>
-				<div className="auth-card">
+			<div className="center_body">
+				<div className="auth-card glass">
 					<h2 className="auth-title">Create your account</h2>
 					<form className="auth-form" onSubmit={handleSubmit}>
 						<input className="auth-input" type="text" placeholder="Username" value={name} onChange={(e) => setName(e.target.value)} required />

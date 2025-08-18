@@ -3,11 +3,11 @@
   justify-content: space-around;
   align-items: center;
   padding: 10px 0;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid var(--glass-border);
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #f9f9f9;
+  background: transparent;
   font-family: Arial, sans-serif;
   z-index: 1000;
   height: 6%;
@@ -20,14 +20,12 @@
   font-weight: 600;
   font-size: 1rem;
   cursor: pointer;
-  color: #4a90e2;
+  color: var(--brand-blue);
   transition: background-color 0.2s;
   border-radius: 6px;
 }
 
-.bottom_footer button:hover {
-  background-color: #d6e4ff;
-}
+.bottom_footer button:hover { background-color: rgba(74, 144, 226, 0.10); }
 
 .profile-section {
   position: relative;

@@ -19,6 +19,9 @@ function ProfilePage() {
 						<p><strong>Display name:</strong> {user?.displayName || user?.username}</p>
 						<p><strong>Email:</strong> {user?.email}</p>
 					</div>
+					<div style={{ marginTop: 16, display: 'flex', gap: 8 }}>
+						<a href="/settings" onClick={(e) => { e.preventDefault(); window.history.pushState({}, '', '/settings'); window.dispatchEvent(new PopStateEvent('popstate')); }}><button>Settings</button></a>
+					</div>
 				</div>
 			</div>
 		</div>

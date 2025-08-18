@@ -20,7 +20,7 @@ function LoginPage() {
 		setLoading(true);
 		try {
 			await login(email, password);
-			navigate('/profile');
+			navigate('/');
 		} catch (err) {
 			setError(err?.message || 'Invalid credentials');
 		} finally {
@@ -31,8 +31,8 @@ function LoginPage() {
 	return (
 		<div>
 			<Top />
-			<div className="center_body" style={{ backgroundColor: 'black' }}>
-				<div className="auth-card">
+			<div className="center_body">
+				<div className="auth-card glass">
 					<h2 className="auth-title">Welcome back</h2>
 					<form className="auth-form" onSubmit={handleSubmit}>
 						<input className="auth-input" type="email" placeholder="Email or username" value={email} onChange={(e) => setEmail(e.target.value)} required />

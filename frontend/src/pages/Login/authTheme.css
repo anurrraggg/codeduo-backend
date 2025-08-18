@@ -1,10 +1,16 @@
 .auth-card {
-	background: #e6f0ff;
 	padding: 28px 26px;
-	border-radius: 14px;
+	border-radius: 16px;
 	color: #2a4d8f;
 	min-width: 360px;
-	box-shadow: 0 12px 24px rgba(42, 77, 143, 0.25);
+}
+
+.auth-card.glass {
+	background: var(--glass-bg);
+	backdrop-filter: saturate(160%) blur(18px);
+	-webkit-backdrop-filter: saturate(160%) blur(18px);
+	border: 1px solid var(--glass-border);
+	box-shadow: 0 8px 32px rgba(30, 42, 74, 0.08), inset 0 1px 0 var(--glass-highlight);
 }
 
 .auth-title {
@@ -27,6 +33,7 @@
 	font-size: 0.95rem;
 }
 
+
 .auth-button {
 	margin-top: 6px;
 	background-color: #4a90e2;
@@ -36,7 +43,7 @@
 	padding: 10px 14px;
 	font-weight: 700;
 	cursor: pointer;
-	box-shadow: 0 6px 14px rgba(74, 144, 226, 0.35);
+	box-shadow: 0 6px 14px rgba(74, 144, 226, 0.25);
 }
 
 .auth-button:disabled {
@@ -52,7 +59,8 @@
 
 .auth-switch {
 	margin-top: 8px;
-	opacity: 0.9;
+	opacity: 0.8;
+	font-size: 0.9rem;
 }
 
 

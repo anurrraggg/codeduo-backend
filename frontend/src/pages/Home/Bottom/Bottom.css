@@ -1,0 +1,67 @@
+.bottom_footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  z-index: 1000;
+}
+
+.bottom_footer button {
+  background: none;
+  border: none;
+  padding: 8px 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #4a90e2;
+  transition: background-color 0.2s;
+  border-radius: 6px;
+}
+
+.bottom_footer button:hover {
+  background-color: #d6e4ff;
+}
+
+.profile-section {
+  position: relative;
+}
+
+.profile-btn {
+  font-weight: 600;
+  color: #4a90e2;
+}
+
+.profile-dropdown {
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  border-radius: 8px;
+  width: 150px;
+  text-align: left;
+  padding: 10px 0;
+}
+
+.dropdown-item {
+  width: 100%;
+  padding: 8px 16px;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #2a4d8f;
+}
+
+.dropdown-item:hover {
+  background-color: #e6f0ff;
+}
+    

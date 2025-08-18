@@ -1,18 +1,8 @@
 import React from 'react';
-import Homepage from './components/Homepage';
-import Profile from './components/Profile';
-import Setting from './components/Setting';
-import './App.css';
+import HomePage from './pages/Home/HomePage';
 
 function App() {
-  return (
-    <>
-      <Homepage />
-      <Profile />
-      <Setting />
-    
-    </>
-  );
+  return <HomePage />;
 }
 
 export default App;

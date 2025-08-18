@@ -23,7 +23,7 @@ function Top() {
       </div>
 
       <div className="streak-section">
-        <span role="img" aria-label="fire" className="fire-emoji">🔥</span>
+        <span  aria-label="fire" className="fire-emoji">🔥</span>
         <span className="streak-text">Streak: {streak}</span>
         <button className="solve-btn" onClick={incrementStreak}>
           Solve Today

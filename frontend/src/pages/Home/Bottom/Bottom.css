@@ -10,6 +10,7 @@
   background-color: #f9f9f9;
   font-family: Arial, sans-serif;
   z-index: 1000;
+  height: 6%;
 }
 
 .bottom_footer button {
@@ -64,4 +65,3 @@
 .dropdown-item:hover {
   background-color: #e6f0ff;
 }
-    

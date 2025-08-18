@@ -1,7 +1,7 @@
 import React from 'react';
-import Top from "../pages/top"
-import Center from '../pages/center'
-import Bottom from '../pages/BOTTOM'
+import Top from "../pages/Top"
+import Center from '../pages/Center'
+import Bottom from '../pages/Bottom'
 
 function Homepage() {
     return (

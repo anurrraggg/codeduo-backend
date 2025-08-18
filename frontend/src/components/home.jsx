@@ -1,19 +1,16 @@
 import React from 'react';
+import Top from "../pages/top"
+import Center from '../pages/center'
+import Bottom from '../pages/BOTTOM'
 
 function Homepage() {
-  return (
-    <>
-      <div className="topheader">
-        {/* Top header content here */}
-      </div>
-      <div className="center_body">
-        {/* Middle content here */}
-      </div>
-      <div className="bottom_footer">
-        {/* Footer content here */}
-      </div>
-    </>
-  );
+    return (
+        <>
+            <Top />
+            <Center />
+            <Bottom />
+        </>
+    );
 }
 
 export default Homepage;

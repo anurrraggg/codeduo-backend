@@ -18,8 +18,11 @@ function ProfilePage() {
 						<p><strong>Username:</strong> {user?.username}</p>
 						<p><strong>Display name:</strong> {user?.displayName || user?.username}</p>
 						<p><strong>Email:</strong> {user?.email}</p>
+						<p><strong>Points:</strong> {user?.points || 0} 🏆</p>
 					</div>
 					<div style={{ marginTop: 16, display: 'flex', gap: 8 }}>
+						<a href="/" onClick={(e) => { e.preventDefault(); window.history.pushState({}, '', '/'); window.dispatchEvent(new PopStateEvent('popstate')); }}><button>Home</button></a>
+						<a href="/leaderboard" onClick={(e) => { e.preventDefault(); window.history.pushState({}, '', '/leaderboard'); window.dispatchEvent(new PopStateEvent('popstate')); }}><button>Leaderboard</button></a>
 						<a href="/settings" onClick={(e) => { e.preventDefault(); window.history.pushState({}, '', '/settings'); window.dispatchEvent(new PopStateEvent('popstate')); }}><button>Settings</button></a>
 					</div>
 				</div>

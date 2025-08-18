@@ -28,6 +28,7 @@ function Top() {
   const location = useLocation();
   const { user, logout } = useAuth();
   const isAuthPage = location.pathname === '/login' || location.pathname === '/register';
+  const isHomePage = location.pathname === '/';
   const [selectedLang, setSelectedLang] = useState(() => localStorage.getItem('selectedLang') || 'C++');
   const [streak] = useState(0);
   const [showLangSelector, setShowLangSelector] = useState(false);
@@ -53,10 +54,17 @@ function Top() {
         </div>
       )}
 
-      <div className="streak-section">
-        <StreakIcon />
-        <span className="streak-text">Streak: {streak}</span>
-      </div>
+      {!isAuthPage && (
+        <div className="streak-section">
+          <StreakIcon />
+          <span className="streak-text">Streak: {streak}</span>
+          {user && (
+            <div className="score-section">
+              <span className="score-text">🏆 {user.points || 0} pts</span>
+            </div>
+          )}
+        </div>
+      )}
 
       <div style={{ marginLeft: 'auto', display: 'flex', gap: 8, alignItems: 'center' }}>
         {!isAuthPage && (
@@ -69,6 +77,7 @@ function Top() {
             )}
             {user && (
               <>
+                {!isHomePage && <Link to="/"><button>Home</button></Link>}
                 <Link to="/profile"><button>Profile</button></Link>
                 <button onClick={() => { logout(); navigate('/'); }}>Logout</button>
               </>

@@ -14,6 +14,9 @@ const userSchema = new mongoose.Schema(
         displayName: { 
             type: String, default: 'User' 
         },
+        points: {
+            type: Number, default: 0
+        },
         // avatarUrl: { type: String, default: '' }
     },
     { timestamps: true }

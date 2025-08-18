@@ -9,6 +9,7 @@ import ProfilePage from './pages/Profile/ProfilePage';
 import ProtectedRoute from './auth/ProtectedRoute';
 import GuestRoute from './auth/GuestRoute';
 import SettingsPage from './pages/Settings/SettingsPage';
+import LeaderboardPage from './pages/Leaderboard/LeaderboardPage';
 
 function App() {
   return (
@@ -53,6 +54,14 @@ function App() {
             element={
               <ProtectedRoute>
                 <SettingsPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/leaderboard"
+            element={
+              <ProtectedRoute>
+                <LeaderboardPage />
               </ProtectedRoute>
             }
           />
